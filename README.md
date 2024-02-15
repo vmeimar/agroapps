@@ -10,10 +10,7 @@ To install & run the application, please do the following:
 - Move inside project root:
   - cd agroapps
 - Deploy project with docker:
-  - ``docker run --rm --interactive --tty \
-    --volume $PWD:/app \
-    --user $(id -u):$(id -g) \
-    composer install``
+  - ``docker run --rm --interactive --tty --volume $PWD:/app --user $(id -u):$(id -g) composer install``
 - Copy the .env settings:
   - ``cp .env.example .env``
 - Get the container up:
@@ -69,3 +66,6 @@ GET ``http://localhost/api/weather-api/``
 **Index OpenMeteo Data**
 
 GET ``http://localhost/api/open-meteo/``
+
+
+The project is also deployed on the private VM: http://vm1.thales.gr/
